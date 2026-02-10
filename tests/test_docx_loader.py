@@ -2,7 +2,7 @@ from loaders.docx_loader import DocxLoader
 
 def test_valid_docx_file():
     loader=DocxLoader()
-    docs = loader.load("sample.docx")
+    docs = loader.load("tests/data/sample.docx")
     assert isinstance(docs, list)
     assert len(docs) == 1
     assert isinstance(docs[0].content, str)

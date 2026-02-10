@@ -2,7 +2,7 @@ from loaders.pdf_loader import PdfLoader
 
 def test_valid_pdf_file():
     loader = PdfLoader()
-    docs = loader.load("sample.pdf")
+    docs = loader.load("tests/data/sample.pdf")
 
     assert isinstance(docs, list)
     assert len(docs) > 0
